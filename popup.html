@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 200px;
+        }
+
+        .hidden {
+            /* display: none; */
+            margin: 10px;
+        }
+
+        .f-size {
+            font-size: smaller;
+        }
+
+        .b-size {
+            margin-top: 10px;
+            width: 180px;
+        }
+
+        .part1 {
+            margin: 10px;
+            margin-bottom: 40px;
+            font-size: small;
+        }
+
+        #title {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #category-add {
+            margin-top: 10px;
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="title">UR URL</h3>
+    <div class="part1">
+        <div id="category-select">
+            <select class="form-select f-size" aria-label="Default select example">
+                <!-- <option value="1">CATEGORY 1</option>
+                <option value="2">CATEGORY 2</option>
+                <option value="3">CATEGORY 3</option> -->
+            </select>
+        </div>
+        <div class="input-group mb-3 f-size" id="category-add">
+            <input type="text" class="form-control f-size" placeholder="CATEGORY" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">✚</button>
+        </div>
+
+    </div>
+
+
+    <div class="hidden" id="lists">
+        <h3 id="list-title">CATEGORY #</h3>
+        <div class="input-group f-size" id="category-lists">
+            <input type="text" class="form-control f-size" placeholder="URL"
+                aria-label="Recipient's username with two button addons">
+            <button class="btn btn-outline-secondary f-size" type="button">Go!</button>
+            <button class="btn btn-outline-secondary f-size" type="button">-</button>
+        </div>
+        <button class="btn btn-outline-secondary b-size" type="button" id="button-addon2">✚</button>
+    </div>
+
+</body>
+<script src="categoryAdd.js"></script>
+
+</html>

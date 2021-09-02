@@ -1,0 +1,22 @@
+{
+    "name": "UR URL",
+    "version": "1.0",
+    "description": "your url",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "icons": {
+        "16": "img/iconW.png",
+        "48": "img/iconBL.png"
+    },
+    "browser_action": {
+        "default_icon": "img/iconBL.png",
+        "icons": {
+            "16": "img/iconW.png",
+            "48": "img/iconBL.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
